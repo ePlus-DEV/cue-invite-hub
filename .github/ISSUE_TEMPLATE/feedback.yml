@@ -1,0 +1,20 @@
+name: Report code status
+description: Report an expired or invalid code
+title: "[Code feedback] "
+body:
+  - type: input
+    id: code
+    attributes:
+      label: Invitation code
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Expired
+        - Invalid
+        - Worked
+    validations:
+      required: true
