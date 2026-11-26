@@ -1,0 +1,16 @@
+name: Submit invitation code
+description: Share a public Cue invitation code
+title: "[Code submission] "
+body:
+  - type: input
+    id: code
+    attributes:
+      label: Invitation code
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Public source URL
+    validations:
+      required: true
